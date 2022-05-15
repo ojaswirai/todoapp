@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/notes_row"
+    android:padding="10dp">
+
+    //adding the text//
+    <TextView
+        android:id="@+id/notesTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginEnd="10dp"
+
+        android:fontFamily="sans-serif-black"
+        android:paddingVertical="5dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="10dp"
+
+        android:text="Notes Title"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    //adding the text
+    <TextView
+        android:id="@+id/notesText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/notesTitle"
+
+        android:paddingStart="23dp"
+        android:paddingBottom="5dp"
+        android:text="Notes Text"
+        android:textSize="18sp" />
+
+//adding the icon//
+
+    <ImageView
+        android:id="@+id/delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:background="#FFEB3B"
+        android:src="@drawable/ic_baseline_close_24" />
+
+</RelativeLayout>
